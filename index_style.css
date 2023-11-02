@@ -1,5 +1,14 @@
-body {
+@font-face{
+    font-family: logo-font;
+    src: url(../NYC-Bikes/19076.ttf)
+}
+
+html {
     background-color: bisque;
+}
+
+body {
+    background-color: none;
     background-image: url(./bike.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,6 +49,8 @@ body {
     bottom: 350px;
 }
 .leftside .logo h1{
+    font-family: logo-font, sans-serif;
+    font-size: xxx-large;
     color: #dc782e;
     margin-left: -500px;
 }
@@ -48,7 +59,7 @@ body {
     color: aliceblue;
 
     position: relative;
-    top: 50px;
+    top: 0px;
     left: 50px;
 }
 
@@ -59,6 +70,7 @@ body {
     align-items: stretch;
     align-self: stretch;
 
+    flex-grow: 1;
     background-color: whitesmoke;
 }
 
@@ -67,9 +79,10 @@ body {
     flex-flow: column nowrap;
     align-content:center;
 
+    background-color: #f5f5f5;
+
     /* border: 2px solid red; */
 }
-
 .section1 h3{
     width: 500px;
 
@@ -78,41 +91,67 @@ body {
 
     /* border: 2px dashed greenyellow; */
 }
+.section1 .youknow{
+    position: relative;
+    bottom: 10px;
+}
 
-.input-right{
+.section2 .input-right{
     display: flex;
     flex-flow: column nowrap;
     gap: 15px;
 }
-
-.input-left{
+.section2 .input-left{
     display: flex;
     flex-flow: column nowrap;
     gap: 15px;
+}
+.section2 fieldset {
+    width: 500px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    border: none;
+    margin: none;
+    box-shadow: 0 0.3em 0.3em lightgrey;
+}
+.section2 .input {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.section2 h3 {
+    position: relative;
+    left: 20px;
 }
 
 .section3{
     position: relative;
 }
 
-button {
+.section3 button {
     color: aliceblue;
     background-color: #dc782e;
-    width: 100px;
+    width: 150px;
     height: 40px;
 
+    display:inline;
+
+    position: relative;
+    top: 20px;
+    left: 50px;
     border-radius: 120px/100px;
 }
 
-fieldset {
-    width: 500px;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
+.section3 p {
+    position: relative;
+    top: 30px;
+    left: 45px;
 }
 
-.input {
-    display: flex;
-    flex-flow: column nowrap;
+.section p,strong {
+    color:#dc782e;
+    font-family: logo-font,sans-serif;
+    font-size: x-large;
 }
