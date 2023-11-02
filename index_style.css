@@ -1,12 +1,14 @@
 body {
     background-color: bisque;
     background-image: url(./bike.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
+
+    margin: 0px;
 }
 
 .leftside {
@@ -38,7 +40,7 @@ body {
     bottom: 350px;
 }
 .leftside .logo h1{
-    color: orange;
+    color: #dc782e;
     margin-left: -500px;
 }
 .leftside p{
@@ -55,6 +57,7 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: stretch;
+    align-self: stretch;
 
     background-color: whitesmoke;
 }
@@ -63,10 +66,17 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-content:center;
+
+    /* border: 2px solid red; */
 }
 
 .section1 h3{
     width: 500px;
+
+    position:relative;
+    left: 20px;
+
+    /* border: 2px dashed greenyellow; */
 }
 
 .input-right{
@@ -87,9 +97,11 @@ body {
 
 button {
     color: aliceblue;
-    background-color: orange;
+    background-color: #dc782e;
     width: 100px;
     height: 40px;
+
+    border-radius: 120px/100px;
 }
 
 fieldset {
