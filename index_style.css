@@ -27,25 +27,24 @@ body {
 
     display: flex;
     flex-flow: column nowrap;
-    align-items:flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
 }
 .leftside .logo{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
-    padding-left: 0px;
+    justify-content: flex-start;
 
     background-color: black;
     align-self: stretch;
     opacity: 0.55;
 
     height: 100px;
-
-    position: relative;
-    bottom: 350px;
+    max-width: 440px;
+    margin: 0px;
+    padding-left: 13vw;
 }
 /* .leftside .logo .icon {
     background-image: url(./bike_icon.png);
@@ -67,8 +66,8 @@ body {
     background-color: transparent;
     color: aliceblue;
 
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 820px;
     left: 50px;
 }
 
