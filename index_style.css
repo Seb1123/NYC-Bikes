@@ -47,6 +47,15 @@ body {
     position: relative;
     bottom: 350px;
 }
+/* .leftside .logo .icon {
+    background-image: url(./bike_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:relative;
+    height:80px;
+    width: 80px;
+    right: 20px
+} */
 .leftside .logo h1{
     position: relative;
     font-family: logo-font, sans-serif;
@@ -125,18 +134,20 @@ body {
     position: relative;
     left: 20px;
 }
+.section2 input:focus{
+    outline: none;
+    border: 1px solid lightskyblue;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
 
 .section3{
     position: relative;
 }
-
 .section3 button {
     color: aliceblue;
     background-color: #dc782e;
     width: 150px;
     height: 40px;
-
-    display:inline;
 
     position: relative;
     top: 20px;
@@ -145,13 +156,11 @@ body {
     border: none;
     box-shadow: 0.4rem 0.4rem 0.5rem lightgrey;
 }
-
 .section3 p {
     position: relative;
     top: 30px;
     left: 45px;
 }
-
 .section p,strong {
     color:#dc782e;
     font-family: logo-font,sans-serif;
